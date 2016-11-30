@@ -7,12 +7,12 @@
 
 struct MessageHeader
 {
-	time_t timestamp;
-	in_addr sender_ip;
-	in_addr receiver_ip;
-	int rnd;
-	bool is_ack;
-	bool is_delivered;
+	time_t timestamp; // время
+	in_addr sender_ip; // айпи отправителя
+	in_addr receiver_ip; // айпи получателя
+	int rnd; // рандомное число
+	bool is_ack; //пакет-подтверждение ли это
+	bool is_delivered; // доставлено ли сообщение уже (и подтверждена доставка)
 	//unsigned char current;
 	//unsigned char total;
 };
